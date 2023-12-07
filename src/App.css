@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center-stepper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 3px #ddd;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.detail-wrapper{
+    display: flex;
+    gap: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-wrapper{
+    width: 70%;
+    padding: 40px 80px;
+    background-color: rgb(248, 248, 248);
 }
-
-.App-link {
-  color: #61dafb;
+.sidebar{
+    margin: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-wrapper{
+    /* padding: 20px; */
+    width: 320px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.sidebar-wrapper:hover{
+    border-color: lightblue;
+}
+.active{
+    color: lightblue;
+}
+.explore{
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: gray;
+}
+.empty-box{
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    border-radius: 7px;
+}
+.empty-box:hover{
+    background-color: lightblue;
+}
+.content{
+    width: 70%;
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.description{
+    color: gray;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.menu{
+    padding: 10px;
+}
+.menu-list{
+    text-decoration: none;
+    color: black;
+}
+.name-wrapper{
+    margin-top: 20px;
+    background-color: rgb(221, 245, 253);
+    border-bottom: 1px solid lightblue;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    padding: 25px;
+}
+.bottom-text{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.inputs-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 100px 20px;
+    background-color: white;
+}
+.input-div{
+    width: 450px;
+    margin-top: 20px;
+}
+.inputs-wrapper div label, div{
+    display: block;
+}
+.inputs-wrapper div input, textarea, select{
+    width: 100%;
+    padding: 8px;
+    color: black;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+.inputs-wrapper div textarea{
+    height: 60px;
+}
+.label{
+    width: 40%;
+    padding: 8px;
+    color: gray;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+.hide{
+    display: none;
+}
+.right-text{
+    font-size: 12px;
+    color: gray;
+}
+.input-div input::placeholder{
+    font-size: 14px;
+    color: lightgray;
+}
+.footer{
+    height: 60px;
+    background-color: white;
+    position: sticky;
+    bottom: 0px;
+    box-shadow: 0 -2px 2px #ddd;
+}
+.footer button{
+    background-color: rgb(49, 27, 245);
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px 40px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+} 
+.ele-info{
+    display: flex;
+    padding: 20px;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.box1{
+    width: 30%;
 }
