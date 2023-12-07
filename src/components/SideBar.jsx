@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import SidebarCard from './SidebarCard';
 
 const SideBar = () => {
@@ -7,14 +7,14 @@ const SideBar = () => {
   return (
     <div className='sidebar'>
       <div className='menu'>
-        <NavLink to='/' className='menu-list'>
+        <Link to='/' className='menu-list'>
           <SidebarCard title={"Name Form"} description={"Start creating a new form with the wide options of fields available"}/>
-        </NavLink>
+        </Link>
       </div>
       <div className='explore'>Explore the following Templates:</div>
       <div className='menu'>
         <NavLink to='/' className='menu-list'>
-          <SidebarCard title={"Deatils Collection"} description={"Collect information from Candidates on their eductaion, work experience, contct no, etc"}/>
+          <SidebarCard title={"Details Collection"} description={"Collect information from Candidates on their eductaion, work experience, contct no, etc"}/>
         </NavLink>
       </div>
       <div className='menu'>

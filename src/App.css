@@ -34,12 +34,14 @@
     padding: 20px;
     display: flex;
     gap: 20px;
+    text-decoration: none;
+    color: black;
 }
 .sidebar-wrapper:hover{
     border-color: lightblue;
 }
-.active{
-    color: lightblue;
+.active .sidebar-wrapper{
+    border-color: lightblue;
 }
 .explore{
     padding-left: 20px;
